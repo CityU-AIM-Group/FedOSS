@@ -55,7 +55,7 @@ python Fed_unknown_detection_WCE.py \
     --start_epoch='[5,10,15,20,25]'
     --sample_from=8 \
 ```
-- [x] testing code and pretrained models is coming soon.
+- [x] testing code and pretrained models are coming soon.
 
 ## Citation
 ```
