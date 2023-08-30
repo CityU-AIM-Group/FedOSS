@@ -24,7 +24,7 @@ python main.py \
 --epoches=200 \
 --client_num=8 \
 --worker_steps=1 \
---mode='DUS_baseline' \
+--mode='Pretain' \
 
 python main.py \
 --data_root='./datasets/Hyperkvasir_processed/labeled-images/' \
@@ -38,7 +38,7 @@ python main.py \
 --epoches=200 \
 --client_num=8 \
 --worker_steps=1 \
---mode='DUS_baseline' \
+--mode='Pretain' \
 
 python main.py \
 --data_root='./datasets/Hyperkvasir_processed/labeled-images/' \
@@ -52,7 +52,7 @@ python main.py \
 --epoches=200 \
 --client_num=8 \
 --worker_steps=1 \
---mode='DUS_baseline' \
+--mode='Pretain' \
 
 python main.py \
 --data_root='./datasets/Hyperkvasir_processed/labeled-images/' \
@@ -66,7 +66,7 @@ python main.py \
 --epoches=30 \
 --client_num=8 \
 --worker_steps=1 \
---mode='DUS_CUS_finetune' \
+--mode='Finetune' \
 --num_steps=5 \
 --unknown_weight=1. \
 --sample_from=8 \
@@ -84,7 +84,7 @@ python main.py \
 --epoches=30 \
 --client_num=8 \
 --worker_steps=1 \
---mode='DUS_CUS_finetune' \
+--mode='Finetune' \
 --num_steps=5 \
 --unknown_weight=1. \
 --sample_from=8 \
@@ -102,7 +102,7 @@ python main.py \
 --epoches=30 \
 --client_num=8 \
 --worker_steps=1 \
---mode='DUS_CUS_finetune' \
+--mode='Finetune' \
 --num_steps=5 \
 --unknown_weight=1. \
 --sample_from=8 \
@@ -121,7 +121,7 @@ python main.py \
 --epoches=200 \
 --client_num=8 \
 --worker_steps=1 \
---mode='DUS_baseline' \
+--mode='Pretain' \
 
 python main.py \
 --data_root='./datasets/Hyperkvasir_processed/labeled-images/' \
@@ -135,7 +135,7 @@ python main.py \
 --epoches=200 \
 --client_num=8 \
 --worker_steps=1 \
---mode='DUS_baseline' \
+--mode='Pretain' \
 
 python main.py \
 --data_root='./datasets/Hyperkvasir_processed/labeled-images/' \
@@ -149,7 +149,7 @@ python main.py \
 --epoches=200 \
 --client_num=8 \
 --worker_steps=1 \
---mode='DUS_baseline' \
+--mode='Pretain' \
 
 
 python main.py \
@@ -164,7 +164,7 @@ python main.py \
 --epoches=30 \
 --client_num=8 \
 --worker_steps=1 \
---mode='DUS_CUS_finetune' \
+--mode='Finetune' \
 --num_steps=5 \
 --unknown_weight=1. \
 --sample_from=8 \
@@ -182,7 +182,7 @@ python main.py \
 --epoches=30 \
 --client_num=8 \
 --worker_steps=1 \
---mode='DUS_CUS_finetune' \
+--mode='Finetune' \
 --num_steps=5 \
 --unknown_weight=1. \
 --sample_from=8 \
@@ -200,7 +200,7 @@ python main.py \
 --epoches=30 \
 --client_num=8 \
 --worker_steps=1 \
---mode='DUS_CUS_finetune' \
+--mode='Finetune' \
 --num_steps=5 \
 --unknown_weight=1. \
 --sample_from=8 \

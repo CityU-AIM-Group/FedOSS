@@ -24,7 +24,7 @@ python main.py \
 --epoches=100 \
 --client_num=8 \
 --worker_steps=1 \
---mode='DUS_baseline' \
+--mode='Pretain' \
 --eps=1.0 \
 --num_steps=100 \
 
@@ -40,7 +40,7 @@ python main.py \
 --epoches=100 \
 --client_num=8 \
 --worker_steps=1 \
---mode='DUS_baseline' \
+--mode='Pretain' \
 --eps=1.0 \
 --num_steps=100 \
 
@@ -56,7 +56,7 @@ python main.py \
 --epoches=100 \
 --client_num=8 \
 --worker_steps=1 \
---mode='DUS_baseline' \
+--mode='Pretain' \
 --eps=1.0 \
 --num_steps=100 \
 
@@ -72,7 +72,7 @@ python main.py \
 --epoches=30 \
 --client_num=8 \
 --worker_steps=1 \
---mode='DUS_CUS_finetune' \
+--mode='Finetune' \
 --eps=1. \
 --num_steps=1 \
 --unknown_weight=1.0 \
@@ -92,7 +92,7 @@ python main.py \
 --epoches=30 \
 --client_num=8 \
 --worker_steps=1 \
---mode='DUS_CUS_finetune' \
+--mode='Finetune' \
 --eps=1. \
 --num_steps=1 \
 --unknown_weight=1.0 \
@@ -112,7 +112,7 @@ python main.py \
 --epoches=30 \
 --client_num=8 \
 --worker_steps=1 \
---mode='DUS_CUS_finetune' \
+--mode='Finetune' \
 --eps=1. \
 --num_steps=1 \
 --unknown_weight=1.0 \
@@ -132,7 +132,7 @@ python main.py \
 --epoches=100 \
 --client_num=8 \
 --worker_steps=1 \
---mode='DUS_baseline' \
+--mode='Pretain' \
 --eps=1.0 \
 --num_steps=100 \
 
@@ -148,7 +148,7 @@ python main.py \
 --epoches=100 \
 --client_num=8 \
 --worker_steps=1 \
---mode='DUS_baseline' \
+--mode='Pretain' \
 --eps=1.0 \
 --num_steps=100 \
 
@@ -164,7 +164,7 @@ python main.py \
 --epoches=100 \
 --client_num=8 \
 --worker_steps=1 \
---mode='DUS_baseline' \
+--mode='Pretain' \
 --eps=1.0 \
 --num_steps=100 \
 
@@ -180,7 +180,7 @@ python main.py \
 --epoches=30 \
 --client_num=8 \
 --worker_steps=1 \
---mode='DUS_CUS_finetune' \
+--mode='Finetune' \
 --eps=1. \
 --num_steps=1 \
 --unknown_weight=1.0 \
@@ -200,7 +200,7 @@ python main.py \
 --epoches=30 \
 --client_num=8 \
 --worker_steps=1 \
---mode='DUS_CUS_finetune' \
+--mode='Finetune' \
 --eps=1. \
 --num_steps=1 \
 --unknown_weight=1.0 \
@@ -220,7 +220,7 @@ python main.py \
 --epoches=30 \
 --client_num=8 \
 --worker_steps=1 \
---mode='DUS_CUS_finetune' \
+--mode='Finetune' \
 --eps=1. \
 --num_steps=1 \
 --unknown_weight=1.0 \
