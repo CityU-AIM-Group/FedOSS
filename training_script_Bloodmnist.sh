@@ -24,7 +24,7 @@ python main.py \
 --epoches=100 \
 --client_num=16 \
 --worker_steps=1 \
---mode='Pretain' \
+--mode='Pretrain' \
 --dirichlet=0.5 \
 
 python main.py \
@@ -39,7 +39,7 @@ python main.py \
 --epoches=100 \
 --client_num=16 \
 --worker_steps=1 \
---mode='Pretain' \
+--mode='Pretrain' \
 --dirichlet=0.5 \
 
 python main.py \
@@ -54,7 +54,7 @@ python main.py \
 --epoches=100 \
 --client_num=16 \
 --worker_steps=1 \
---mode='Pretain' \
+--mode='Pretrain' \
 --dirichlet=0.5 \
 
 python main.py \
@@ -130,7 +130,7 @@ python main.py \
 --epoches=100 \
 --client_num=16 \
 --worker_steps=1 \
---mode='Pretain' \
+--mode='Pretrain' \
 --dirichlet=0.5 \
 
 python main.py \
@@ -145,7 +145,7 @@ python main.py \
 --epoches=100 \
 --client_num=16 \
 --worker_steps=1 \
---mode='Pretain' \
+--mode='Pretrain' \
 --dirichlet=0.5 \
 
 python main.py \
@@ -160,7 +160,7 @@ python main.py \
 --epoches=100 \
 --client_num=16 \
 --worker_steps=1 \
---mode='Pretain' \
+--mode='Pretrain' \
 --dirichlet=0.5 \
 
 python main.py \

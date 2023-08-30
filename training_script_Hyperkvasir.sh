@@ -24,7 +24,7 @@ python main.py \
 --epoches=200 \
 --client_num=8 \
 --worker_steps=1 \
---mode='Pretain' \
+--mode='Pretrain' \
 
 python main.py \
 --data_root='./datasets/Hyperkvasir_processed/labeled-images/' \
@@ -38,7 +38,7 @@ python main.py \
 --epoches=200 \
 --client_num=8 \
 --worker_steps=1 \
---mode='Pretain' \
+--mode='Pretrain' \
 
 python main.py \
 --data_root='./datasets/Hyperkvasir_processed/labeled-images/' \
@@ -52,7 +52,7 @@ python main.py \
 --epoches=200 \
 --client_num=8 \
 --worker_steps=1 \
---mode='Pretain' \
+--mode='Pretrain' \
 
 python main.py \
 --data_root='./datasets/Hyperkvasir_processed/labeled-images/' \
@@ -121,7 +121,7 @@ python main.py \
 --epoches=200 \
 --client_num=8 \
 --worker_steps=1 \
---mode='Pretain' \
+--mode='Pretrain' \
 
 python main.py \
 --data_root='./datasets/Hyperkvasir_processed/labeled-images/' \
@@ -135,7 +135,7 @@ python main.py \
 --epoches=200 \
 --client_num=8 \
 --worker_steps=1 \
---mode='Pretain' \
+--mode='Pretrain' \
 
 python main.py \
 --data_root='./datasets/Hyperkvasir_processed/labeled-images/' \
@@ -149,7 +149,7 @@ python main.py \
 --epoches=200 \
 --client_num=8 \
 --worker_steps=1 \
---mode='Pretain' \
+--mode='Pretrain' \
 
 
 python main.py \
