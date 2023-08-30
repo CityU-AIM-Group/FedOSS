@@ -8,4 +8,13 @@ Open set recognition (OSR) aims to accurately classify known diseases and recogn
 <img width="800" src="imgs/framework.png" alt="FL"/>
 </div>
 
-Code is coming soon.
+## Running
+### Dependencies
+```
+pip install -r requirements.txt
+```
+### Scripts
+
+- [x] download the prostate dataset [promise](https://promise12.grand-challenge.org/), unzip and put it into the dir './data'
+- [x] preprocess the data 
+```
