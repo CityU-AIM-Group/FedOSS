@@ -27,7 +27,7 @@ def communication(args, server_model, models, client_weights):
     return server_model, models
 
 
-def communication_FedOSR(args, server_model, models, client_weights):
+def communication_Pretrain(args, server_model, models, client_weights):
 
     with torch.no_grad():
         # aggregate params
@@ -93,7 +93,7 @@ def compute_global_statistic(args, mean_clients,cov_clients,number_clients):
     
     return unknown_dis
 
-def communication_FedOSR_DUS_CUS(args, server_model, models, client_weights, mean_clients,cov_clients,number_clients, unknown_dis):
+def communication_Finetune(args, server_model, models, client_weights, mean_clients,cov_clients,number_clients, unknown_dis):
     
     if len(mean_clients)>0:
         mean_clients = torch.stack(mean_clients, 0)
@@ -118,55 +118,3 @@ def communication_FedOSR_DUS_CUS(args, server_model, models, client_weights, mea
                         models[client_idx].state_dict()[key].data.copy_(server_model.state_dict()[key])
 
     return server_model, models, unknown_dis
-
-
-if __name__=="__main__":
-    a = torch.randn(8, 6, 10)
-    b = torch.randn(8, 6, 10, 10)
-    c = torch.randint(1, 100, (8, 6))
-    
-    torch.manual_seed(1)
-    sample_num = torch.randint(1,100, (8,6))
-    
-    known_class = 6
-    
-    
-    mean_clients = []
-    cov_clients = []
-    number_clients = []      
-    
-    for i in range(8):
-        mean_dict = []
-        cov_dict = []
-        number_dict = torch.zeros(known_class)
-        unknown_dict = [torch.randn(sample_num[i][c], 100) for c in range(known_class)]
-        for index in range(known_class):
-            mean_dict.append(unknown_dict[index].mean(0))
-            
-            X = unknown_dict[index] - unknown_dict[index].mean(0)            
-            cov_matrix = torch.mm(X.t(), X) / len(X)
-            eye_matrix = torch.eye(unknown_dict[index].shape[1])
-            cov_matrix += 0.0001 * eye_matrix
-            cov_dict.append(cov_matrix)
-            number_dict[index] =  len(X)
-        
-        
-        mean_dict = torch.stack(mean_dict, dim = 0) # C, D
-        cov_dict = torch.stack(cov_dict, dim = 0) # C, D, D
-        
-        mean_clients.append(mean_dict)
-        cov_clients.append(cov_dict)
-        number_clients.append(number_dict)
-
-    mean_clients = torch.stack(mean_clients, 0)
-    cov_clients = torch.stack(cov_clients, 0)
-    number_clients = torch.stack(number_clients, 0)
-    g_mean, g_cov = compute_global_statistic(mean_clients, cov_clients, number_clients)
-
-    
-    for index in range(g_mean.shape[0]):
-        unknown_dis = torch.distributions.multivariate_normal.MultivariateNormal(g_mean[index], covariance_matrix=g_cov[index])
-    
-    
-    
-    
