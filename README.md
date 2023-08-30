@@ -30,7 +30,7 @@ python main.py \
     --epoches=100 \
     --client_num=16 \
     --worker_steps=1 \
-    --mode='DUS_baseline' \
+    --mode='Pretrain' \
     --dirichlet=0.5 \
 ```
 - [x] finetune the FedOSS framework on Blood Cell dataset.
@@ -47,7 +47,7 @@ python main.py \
     --epoches=30 \
     --client_num=16 \
     --worker_steps=1 \
-    --mode='DUS_CUS_finetune' \
+    --mode='Finetune' \
     --eps=0.1 \
     --num_steps=1 \
     --unknown_weight=1. \
