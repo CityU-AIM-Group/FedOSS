@@ -14,7 +14,7 @@ Open set recognition (OSR) aims to accurately classify known diseases and recogn
 pip install -r requirements.txt
 ```
 ### Scripts
-
+- [x] download [ResNet18](https://download.pytorch.org/models/resnet18-5c106cde.pth) model of PyTorch and put it into the dir './pre_model/'.
 - [x] download [Blood Cell](https://zenodo.org/record/6496656/files/bloodmnist.npz?download=1) and [3D Organ](https://zenodo.org/record/6496656/files/organmnist3d.npz?download=1) datasets and put them into the dir './datasets/MedMNIST/'. For the HyperKvasir dataset, the processed version is avaliable via the [link](https://drive.google.com/file/d/1QOKXKwQh9wYVTWC1ckQnLF6LLpejpjXW/view?usp=sharing). Please unzip and put it into the dir './datasets/'.
 - [x] pretrain the FedOSS framework on Blood Cell dataset.
 ```
