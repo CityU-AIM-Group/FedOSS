@@ -12,7 +12,7 @@ echo "Allocate Gpu Units:"$CUDA_VISIBLE_DEVICES
 
 nvidia-smi
 
-python Fed_unknown_detection_WCE.py \
+python main.py \
 --data_root='./datasets/Hyperkvasir_processed/labeled-images/' \
 --lr=5e-4 \
 --backbone='Resnet18' \
@@ -26,7 +26,7 @@ python Fed_unknown_detection_WCE.py \
 --worker_steps=1 \
 --mode='DUS_baseline' \
 
-python Fed_unknown_detection_WCE.py \
+python main.py \
 --data_root='./datasets/Hyperkvasir_processed/labeled-images/' \
 --lr=5e-4 \
 --backbone='Resnet18' \
@@ -40,7 +40,7 @@ python Fed_unknown_detection_WCE.py \
 --worker_steps=1 \
 --mode='DUS_baseline' \
 
-python Fed_unknown_detection_WCE.py \
+python main.py \
 --data_root='./datasets/Hyperkvasir_processed/labeled-images/' \
 --lr=5e-4 \
 --backbone='Resnet18' \
@@ -54,7 +54,7 @@ python Fed_unknown_detection_WCE.py \
 --worker_steps=1 \
 --mode='DUS_baseline' \
 
-python Fed_unknown_detection_WCE.py \
+python main.py \
 --data_root='./datasets/Hyperkvasir_processed/labeled-images/' \
 --lr=1e-4 \
 --backbone='Resnet18' \
@@ -72,7 +72,7 @@ python Fed_unknown_detection_WCE.py \
 --sample_from=8 \
 --start_epoch='[5,10,15,20,25]'
 
-python Fed_unknown_detection_WCE.py \
+python main.py \
 --data_root='./datasets/Hyperkvasir_processed/labeled-images/' \
 --lr=1e-4 \
 --backbone='Resnet18' \
@@ -90,7 +90,7 @@ python Fed_unknown_detection_WCE.py \
 --sample_from=8 \
 --start_epoch='[5,10,15,20,25]'
 
-python Fed_unknown_detection_WCE.py \
+python main.py \
 --data_root='./datasets/Hyperkvasir_processed/labeled-images/' \
 --lr=1e-4 \
 --backbone='Resnet18' \
@@ -109,7 +109,7 @@ python Fed_unknown_detection_WCE.py \
 --start_epoch='[5,10,15,20,25]'
 
 
-python Fed_unknown_detection_WCE.py \
+python main.py \
 --data_root='./datasets/Hyperkvasir_processed/labeled-images/' \
 --lr=5e-4 \
 --backbone='Resnet18' \
@@ -123,7 +123,7 @@ python Fed_unknown_detection_WCE.py \
 --worker_steps=1 \
 --mode='DUS_baseline' \
 
-python Fed_unknown_detection_WCE.py \
+python main.py \
 --data_root='./datasets/Hyperkvasir_processed/labeled-images/' \
 --lr=5e-4 \
 --backbone='Resnet18' \
@@ -137,7 +137,7 @@ python Fed_unknown_detection_WCE.py \
 --worker_steps=1 \
 --mode='DUS_baseline' \
 
-python Fed_unknown_detection_WCE.py \
+python main.py \
 --data_root='./datasets/Hyperkvasir_processed/labeled-images/' \
 --lr=5e-4 \
 --backbone='Resnet18' \
@@ -152,7 +152,7 @@ python Fed_unknown_detection_WCE.py \
 --mode='DUS_baseline' \
 
 
-python Fed_unknown_detection_WCE.py \
+python main.py \
 --data_root='./datasets/Hyperkvasir_processed/labeled-images/' \
 --lr=1e-4 \
 --backbone='Resnet18' \
@@ -170,7 +170,7 @@ python Fed_unknown_detection_WCE.py \
 --sample_from=8 \
 --start_epoch='[5,10,15,20,25]'
 
-python Fed_unknown_detection_WCE.py \
+python main.py \
 --data_root='./datasets/Hyperkvasir_processed/labeled-images/' \
 --lr=1e-4 \
 --backbone='Resnet18' \
@@ -188,7 +188,7 @@ python Fed_unknown_detection_WCE.py \
 --sample_from=8 \
 --start_epoch='[5,10,15,20,25]'
 
-python Fed_unknown_detection_WCE.py \
+python main.py \
 --data_root='./datasets/Hyperkvasir_processed/labeled-images/' \
 --lr=1e-4 \
 --backbone='Resnet18' \
