@@ -12,7 +12,7 @@ echo "Allocate Gpu Units:"$CUDA_VISIBLE_DEVICES
 
 nvidia-smi
 
-python Fed_unknown_detection_WCE.py \
+python main.py \
 --data_root='./datasets/MedMNIST/bloodmnist.npz' \
 --lr=5e-4 \
 --backbone='Resnet18' \
@@ -27,7 +27,7 @@ python Fed_unknown_detection_WCE.py \
 --mode='DUS_baseline' \
 --dirichlet=0.5 \
 
-python Fed_unknown_detection_WCE.py \
+python main.py \
 --data_root='./datasets/MedMNIST/bloodmnist.npz' \
 --lr=5e-4 \
 --backbone='Resnet18' \
@@ -42,7 +42,7 @@ python Fed_unknown_detection_WCE.py \
 --mode='DUS_baseline' \
 --dirichlet=0.5 \
 
-python Fed_unknown_detection_WCE.py \
+python main.py \
 --data_root='./datasets/MedMNIST/bloodmnist.npz' \
 --lr=5e-4 \
 --backbone='Resnet18' \
@@ -57,7 +57,7 @@ python Fed_unknown_detection_WCE.py \
 --mode='DUS_baseline' \
 --dirichlet=0.5 \
 
-python Fed_unknown_detection_WCE.py \
+python main.py \
 --data_root='./datasets/MedMNIST/bloodmnist.npz' \
 --lr=1e-4 \
 --backbone='Resnet18' \
@@ -77,7 +77,7 @@ python Fed_unknown_detection_WCE.py \
 --start_epoch='[5,10,15,20,25]'
 --sample_from=8 \
 
-python Fed_unknown_detection_WCE.py \
+python main.py \
 --data_root='./datasets/MedMNIST/bloodmnist.npz' \
 --lr=1e-4 \
 --backbone='Resnet18' \
@@ -97,7 +97,7 @@ python Fed_unknown_detection_WCE.py \
 --start_epoch='[5,10,15,20,25]'
 --sample_from=8 \
 
-python Fed_unknown_detection_WCE.py \
+python main.py \
 --data_root='./datasets/MedMNIST/bloodmnist.npz' \
 --lr=1e-4 \
 --backbone='Resnet18' \
@@ -118,7 +118,7 @@ python Fed_unknown_detection_WCE.py \
 --sample_from=8 \
 
 
-python Fed_unknown_detection_WCE.py \
+python main.py \
 --data_root='./datasets/MedMNIST/bloodmnist.npz' \
 --lr=5e-4 \
 --backbone='Resnet18' \
@@ -133,7 +133,7 @@ python Fed_unknown_detection_WCE.py \
 --mode='DUS_baseline' \
 --dirichlet=0.5 \
 
-python Fed_unknown_detection_WCE.py \
+python main.py \
 --data_root='./datasets/MedMNIST/bloodmnist.npz' \
 --lr=5e-4 \
 --backbone='Resnet18' \
@@ -148,7 +148,7 @@ python Fed_unknown_detection_WCE.py \
 --mode='DUS_baseline' \
 --dirichlet=0.5 \
 
-python Fed_unknown_detection_WCE.py \
+python main.py \
 --data_root='./datasets/MedMNIST/bloodmnist.npz' \
 --lr=5e-4 \
 --backbone='Resnet18' \
@@ -163,7 +163,7 @@ python Fed_unknown_detection_WCE.py \
 --mode='DUS_baseline' \
 --dirichlet=0.5 \
 
-python Fed_unknown_detection_WCE.py \
+python main.py \
 --data_root='./datasets/MedMNIST/bloodmnist.npz' \
 --lr=1e-4 \
 --backbone='Resnet18' \
@@ -183,7 +183,7 @@ python Fed_unknown_detection_WCE.py \
 --start_epoch='[5,10,15,20,25]'
 --sample_from=8 \
 
-python Fed_unknown_detection_WCE.py \
+python main.py \
 --data_root='./datasets/MedMNIST/bloodmnist.npz' \
 --lr=1e-4 \
 --backbone='Resnet18' \
@@ -203,7 +203,7 @@ python Fed_unknown_detection_WCE.py \
 --start_epoch='[5,10,15,20,25]'
 --sample_from=8 \
 
-python Fed_unknown_detection_WCE.py \
+python main.py \
 --data_root='./datasets/MedMNIST/bloodmnist.npz' \
 --lr=1e-4 \
 --backbone='Resnet18' \
