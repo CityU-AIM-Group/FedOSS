@@ -15,6 +15,5 @@ pip install -r requirements.txt
 ```
 ### Scripts
 
-- [x] download the prostate dataset [promise](https://promise12.grand-challenge.org/), unzip and put it into the dir './data'
-- [x] preprocess the data 
+- [x] download [Blood Cell](https://zenodo.org/record/6496656/files/bloodmnist.npz?download=1) and [3D Organ](https://zenodo.org/record/6496656/files/organmnist3d.npz?download=1) datasets, unzip and put it into the dir './data'
 ```
