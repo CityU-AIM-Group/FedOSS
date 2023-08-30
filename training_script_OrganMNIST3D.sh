@@ -12,7 +12,7 @@ echo "Allocate Gpu Units:"$CUDA_VISIBLE_DEVICES
 
 nvidia-smi
 
-python Fed_unknown_detection_WCE.py \
+python main.py \
 --data_root='./datasets/MedMNIST/organmnist3d.npz' \
 --lr=5e-4 \
 --backbone='Resnet18_3D' \
@@ -28,7 +28,7 @@ python Fed_unknown_detection_WCE.py \
 --eps=1.0 \
 --num_steps=100 \
 
-python Fed_unknown_detection_WCE.py \
+python main.py \
 --data_root='./datasets/MedMNIST/organmnist3d.npz' \
 --lr=5e-4 \
 --backbone='Resnet18_3D' \
@@ -44,7 +44,7 @@ python Fed_unknown_detection_WCE.py \
 --eps=1.0 \
 --num_steps=100 \
 
-python Fed_unknown_detection_WCE.py \
+python main.py \
 --data_root='./datasets/MedMNIST/organmnist3d.npz' \
 --lr=5e-4 \
 --backbone='Resnet18_3D' \
@@ -60,7 +60,7 @@ python Fed_unknown_detection_WCE.py \
 --eps=1.0 \
 --num_steps=100 \
 
-python Fed_unknown_detection_WCE.py \
+python main.py \
 --data_root='./datasets/MedMNIST/organmnist3d.npz' \
 --lr=1e-4 \
 --backbone='Resnet18_3D' \
@@ -80,7 +80,7 @@ python Fed_unknown_detection_WCE.py \
 --start_epoch='[5,10,15,20,25]' \
 --sample_from=8 \
 
-python Fed_unknown_detection_WCE.py \
+python main.py \
 --data_root='./datasets/MedMNIST/organmnist3d.npz' \
 --lr=1e-4 \
 --backbone='Resnet18_3D' \
@@ -100,7 +100,7 @@ python Fed_unknown_detection_WCE.py \
 --start_epoch='[5,10,15,20,25]' \
 --sample_from=8 \
 
-python Fed_unknown_detection_WCE.py \
+python main.py \
 --data_root='./datasets/MedMNIST/organmnist3d.npz' \
 --lr=1e-4 \
 --backbone='Resnet18_3D' \
@@ -120,7 +120,7 @@ python Fed_unknown_detection_WCE.py \
 --start_epoch='[5,10,15,20,25]' \
 --sample_from=8 \
 
-python Fed_unknown_detection_WCE.py \
+python main.py \
 --data_root='./datasets/MedMNIST/organmnist3d.npz' \
 --lr=5e-4 \
 --backbone='Resnet18_3D' \
@@ -136,7 +136,7 @@ python Fed_unknown_detection_WCE.py \
 --eps=1.0 \
 --num_steps=100 \
 
-python Fed_unknown_detection_WCE.py \
+python main.py \
 --data_root='./datasets/MedMNIST/organmnist3d.npz' \
 --lr=5e-4 \
 --backbone='Resnet18_3D' \
@@ -152,7 +152,7 @@ python Fed_unknown_detection_WCE.py \
 --eps=1.0 \
 --num_steps=100 \
 
-python Fed_unknown_detection_WCE.py \
+python main.py \
 --data_root='./datasets/MedMNIST/organmnist3d.npz' \
 --lr=5e-4 \
 --backbone='Resnet18_3D' \
@@ -168,7 +168,7 @@ python Fed_unknown_detection_WCE.py \
 --eps=1.0 \
 --num_steps=100 \
 
-python Fed_unknown_detection_WCE.py \
+python main.py \
 --data_root='./datasets/MedMNIST/organmnist3d.npz' \
 --lr=1e-4 \
 --backbone='Resnet18_3D' \
@@ -188,7 +188,7 @@ python Fed_unknown_detection_WCE.py \
 --start_epoch='[5,10,15,20,25]' \
 --sample_from=8 \
 
-python Fed_unknown_detection_WCE.py \
+python main.py \
 --data_root='./datasets/MedMNIST/organmnist3d.npz' \
 --lr=1e-4 \
 --backbone='Resnet18_3D' \
@@ -208,7 +208,7 @@ python Fed_unknown_detection_WCE.py \
 --start_epoch='[5,10,15,20,25]' \
 --sample_from=8 \
 
-python Fed_unknown_detection_WCE.py \
+python main.py \
 --data_root='./datasets/MedMNIST/organmnist3d.npz' \
 --lr=1e-4 \
 --backbone='Resnet18_3D' \
