@@ -15,5 +15,44 @@ pip install -r requirements.txt
 ```
 ### Scripts
 
-- [x] download [Blood Cell](https://zenodo.org/record/6496656/files/bloodmnist.npz?download=1) and [3D Organ](https://zenodo.org/record/6496656/files/organmnist3d.npz?download=1) datasets and put them into the dir './datasets/MedMNIST/'. For the HyperKvasir dataset, the processed version is avaliable via the [link](https://drive.google.com/file/d/1QOKXKwQh9wYVTWC1ckQnLF6LLpejpjXW/view?usp=sharing) After downloading it, please unzip and put it into the dir './datasets/'.
+- [x] download [Blood Cell](https://zenodo.org/record/6496656/files/bloodmnist.npz?download=1) and [3D Organ](https://zenodo.org/record/6496656/files/organmnist3d.npz?download=1) datasets and put them into the dir './datasets/MedMNIST/'. For the HyperKvasir dataset, the processed version is avaliable via the [link](https://drive.google.com/file/d/1QOKXKwQh9wYVTWC1ckQnLF6LLpejpjXW/view?usp=sharing). Please unzip and put it into the dir './datasets/'.
+- [x] pretrain the FedOSS framework on Blood Cell dataset.
+```
+python Fed_unknown_detection_WCE.py \
+    --data_root='./datasets/MedMNIST/bloodmnist.npz' \
+    --lr=5e-4 \
+    --backbone='Resnet18' \
+    --dataset='Bloodmnist' \
+    --known_class=5 \
+    --unknown_class=3 \
+    --seed=0 \
+    --batchsize=8 \
+    --epoches=100 \
+    --client_num=16 \
+    --worker_steps=1 \
+    --mode='DUS_baseline' \
+    --dirichlet=0.5 \
+```
+- [x] finetune the FedOSS framework on Blood Cell dataset.
+```
+python Fed_unknown_detection_WCE.py \
+    --data_root='./datasets/MedMNIST/bloodmnist.npz' \
+    --lr=1e-4 \
+    --backbone='Resnet18' \
+    --dataset='Bloodmnist' \
+    --known_class=5 \
+    --unknown_class=3 \
+    --seed=0 \
+    --batchsize=8 \
+    --epoches=30 \
+    --client_num=16 \
+    --worker_steps=1 \
+    --mode='DUS_CUS_finetune' \
+    --eps=0.1 \
+    --num_steps=1 \
+    --unknown_weight=1. \
+    --dirichlet=0.5 \
+    --start_epoch='[5,10,15,20,25]'
+    --sample_from=8 \
+```
 
