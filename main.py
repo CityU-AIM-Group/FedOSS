@@ -16,11 +16,11 @@ warnings.filterwarnings('ignore')
 
 
 def main(args):
-    if args.mode == 'DUS_baseline':
-        from lib.run_DUS_baseline import run
+    if args.mode == 'Pretain':
+        from lib.Pretain import run
         run(args)        
-    elif args.mode == 'DUS_CUS_finetune':
-        from lib.run_DUS_CUS_finetune import run
+    elif args.mode == 'Finetune':
+        from lib.Finetune import run
         run(args)
 
  
@@ -53,7 +53,7 @@ if __name__=="__main__":
     
     parser.add_argument('--client_num', type=int, default=8, help='the number of clients')
     parser.add_argument('--worker_steps', type=int, default=1, help='step of worker')
-    parser.add_argument('--mode', type=str, default='DUS_baseline', help='DUS_baseline')
+    parser.add_argument('--mode', type=str, default='Pretain', help='Pretain, Finetune')
 
     parser.add_argument('--dirichlet', type=float, default=0.5,help='dirichlet alpha')    
     
