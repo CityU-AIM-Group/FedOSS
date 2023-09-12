@@ -55,8 +55,6 @@ python main.py \
     --start_epoch='[5,10,15,20,25]'
     --sample_from=8 \
 ```
-- [x] testing code and pretrained models are coming soon.
-
 ## Citation
 ```
 @ARTICLE{10177875,
@@ -64,6 +62,7 @@ python main.py \
   journal={IEEE Transactions on Medical Imaging}, 
   title={FedOSS: Federated Open Set Recognition via Inter-client Discrepancy and Collaboration}, 
   year={2023},
-  doi={10.1109/TMI.2023.3294014}}
+  doi={10.1109/TMI.2023.3294014}
+}
 ```
       
